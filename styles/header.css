@@ -3,10 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Barlow", serif;
-
 }
 
-html{
+html {
   overflow-x: hidden;
 }
 
@@ -19,6 +18,7 @@ body {
 
 #header {
   width: 100%;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,7 +28,8 @@ body {
 }
 
 header {
-  width: 70%;
+  width: 100%;
+  padding: 0px 5%;
   height: 80px;
   display: inline-flex;
   justify-content: space-around;
@@ -64,8 +65,8 @@ header {
     font-weight: 500;
     color: white;
   }
-  button{
-    color:#E17537;
+  button {
+    color: #e17537;
     background-color: white;
     padding: 8px 16px;
     border: none;
@@ -76,15 +77,13 @@ header {
 }
 
 .headerContent {
-  margin-top: 100px;
   display: inline-flex;
+  justify-content: space-between;
   width: 100%;
-  height: 1000px;
+  padding: 5%;
 }
 
 .headerText {
-  position: relative;
-  left: 100px;
   display: inline-flex;
   flex-direction: column;
   width: 540px;
@@ -92,28 +91,26 @@ header {
   justify-content: space-between;
   justify-self: center;
 
-  h1{
-   
+  h1 {
     font-weight: 600;
     font-size: 84px;
   }
 
-  p{
+  p {
     font-weight: 700;
   }
 }
 
-.Photos{
+.Photos {
   display: inline-flex;
-  position:relative;
+  position: relative;
   right: 250px;
-  width: 1000px;
 }
 
 .Photos img:first-child {
   position: relative;
-   left: 400px; 
-   top: 74px;
+  left: 400px;
+  top: 74px;
 }
 
 .companies {
@@ -127,28 +124,33 @@ header {
   }
 }
 
-.headerButtonsWrapper{
-  display:  inline-flex;
+.headerButtonsWrapper {
+  display: inline-flex;
   gap: 30px;
   align-items: center;
-  button{
+  button {
     background-color: rgba(10, 37, 64, 1);
     padding: 8px 26px;
     border-radius: 24px;
-    color:white;
+    color: white;
     font-weight: 500;
-    font-size:14px;
+    font-size: 14px;
   }
 
-  span{
-    color:rgba(10, 37, 64, 1);
+  span {
+    color: rgba(10, 37, 64, 1);
     font-weight: 500;
-  
   }
 }
 
-.BurgerMenu{
+.BurgerMenu {
   display: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .headerContent {
+    padding: 0px 2%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -156,53 +158,53 @@ header {
     justify-content: space-between;
     width: 90%;
   }
+  .headerContent {
+    padding: 0px 2%;
+  }
 }
 
-@media screen and (max-width: 728px) {
+@media screen and (max-width: 768px) {
+  nav,
+  .headButtons {
+    display: none;
+  }
+  #header {
+    width: 100vw;
+    height: 100%;
+    margin-bottom: 400px;
+  }
 
- nav, .headButtons{
-  display: none;
- }
-#header{
-  width: 100vw;
-}
+  #header * {
+    margin: unset;
+    position: unset;
+  }
 
-#header *{
-  margin: unset;
-  position: unset;
-}
+  .BurgerMenu {
+    display: block;
+  }
 
-.BurgerMenu{
-  display: block;
-}
+  .headerContent {
+    justify-content: center;
+    padding: 0px 10px;
+  }
+  .headerText {
+    width: 50%;
+    height: 40%;
+    h1 {
+      font-size: 50px;
+    }
+  }
 
-.headerContent{
-  justify-content: center;
-  padding: 0px 10px;
-}
-.headerText{
- width: 50%;
- height: 40%;
-  h1{
-  font-size: 50px;
-}
-  
-}
+  .Photos {
+    display: inline-block;
+    width: 50%;
+    justify-content: center;
+  }
 
-
- .Photos{
-  display: inline-block;
-  width: 50%;
-  justify-content: center;
-}
-
-.Photos img:nth-child(2){
-  display: none;
-}
-.companies{
-  grid-template-columns: repeat(4, 150px)
-}
-
-
- 
+  .Photos img:nth-child(2) {
+    display: none;
+  }
+  .companies {
+    grid-template-columns: repeat(4, 150px);
+  }
 }

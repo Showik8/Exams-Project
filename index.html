@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/adds.css" />
     <title>Stripe</title>
   </head>
   <body>
@@ -14,31 +18,35 @@
       <header>
         <div>
           <img src="./assets/header/stirpe.svg" alt="Stripe" />
-        <nav class="headerNav">
-          <ul>
-            <li>
-              <a href="">Products</a>
-            </li>
-            <li>
-              <a href="">Solutions</a>
-            </li>
-            <li>
-              <a href="">Developers</a>
-            </li>
-            <li>
-              <a href="">Resources</a>
-            </li>
-            <li>
-              <a href="">Pricing</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="headerNav">
+            <ul>
+              <li>
+                <a href="">Products</a>
+              </li>
+              <li>
+                <a href="">Solutions</a>
+              </li>
+              <li>
+                <a href="">Developers</a>
+              </li>
+              <li>
+                <a href="">Resources</a>
+              </li>
+              <li>
+                <a href="">Pricing</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="headButtons">
           <span>Contact sales ></span>
           <button>Sign in ></button>
         </div>
-        <img class="BurgerMenu" src="./assets/header/Nav.png" alt="BurgerMenu">
+        <img
+          class="BurgerMenu"
+          src="./assets/header/Nav.png"
+          alt="BurgerMenu"
+        />
       </header>
       <div class="headerContent">
         <div class="headerText">
@@ -54,20 +62,119 @@
           </div>
         </div>
         <div class="Photos">
-            <img src="./assets/header/ApplePay.png" alt="ApplePay">
-            <img src="./assets/header/Charts.png" alt="Charts">
+          <img src="./assets/header/ApplePay.png" alt="ApplePay" />
+          <img src="./assets/header/Charts.png" alt="Charts" />
         </div>
       </div>
       <div class="companies">
-        <img src="./assets/header/companies/amazon.svg" alt="amazon">
-        <img src="./assets/header/companies/force.svg" alt="force">
-        <img src="./assets/header/companies/google.svg" alt="google">
-        <img src="./assets/header/companies/urbn.svg" alt="urbn">
-        <img src="./assets/header/companies/shopify.svg" alt="shopify">
-        <img src="./assets/header/companies/whatsapp.svg" alt="whatsapp">
-        <img src="./assets/header/companies/bmw.svg" alt="bmw">
-        <img src="./assets/header/companies/mariot.svg" alt="mariot">
+        <img src="./assets/header/companies/amazon.svg" alt="amazon" />
+        <img src="./assets/header/companies/force.svg" alt="force" />
+        <img src="./assets/header/companies/google.svg" alt="google" />
+        <img src="./assets/header/companies/urbn.svg" alt="urbn" />
+        <img src="./assets/header/companies/shopify.svg" alt="shopify" />
+        <img src="./assets/header/companies/whatsapp.svg" alt="whatsapp" />
+        <img src="./assets/header/companies/bmw.svg" alt="bmw" />
+        <img src="./assets/header/companies/mariot.svg" alt="mariot" />
       </div>
+    </section>
+    <section id="adds">
+      <article id="solutions">
+        <div class="text">
+          <h6>Modular solutions</h6>
+          <h2>A fully integrated suite of financial and payments products</h2>
+          <p>
+            Reduce costs, grow revenue, and run your business more efficiently
+            on a fully integrated platform. Use Stripe to handle all of your
+            payments-related needs, manage revenue operations, and launch (or
+            invent) new business models.
+          </p>
+        </div>
+        <img class="notHidden" src="./assets/adds/cards.svg" alt="cards" />
+        <img class="hidden" src="./assets/adds/addResonsive.png" alt="respons">
+      </article>
+      <article id="payments">
+        <div class="text">
+          <div class="label" >
+            <img src="./assets/adds/iconPayments.svg" alt="icoon" />
+            <h6>Payments</h6>
+          </div>
+          <h2>Accept and optimize payments, globally</h2>
+          <p>
+            Increase authorization rates, optimize your checkout conversion, and
+            offer local payment methods in every market.
+          </p>
+          <button class="primaryButton">Start with Payments ></button>
+          <div class="seeMore">
+           <b>See also</b>
+          <span><strong>Tax </strong>  for automating sales tax and VAT</span>
+          <span><strong>Radar</strong>   for fraud prevention and management</span>
+          <span><strong> Terminal </strong> for custom in-person payments</span>
+         </div>
+        </div>
+        <img src="./assets/adds/applePay.svg" alt="applePay" />
+      </article>
+      <article id="billing">
+        <div class="text">
+          <div class="label" >
+            <img src="./assets/adds/iconBilling.svg" alt="icon" />
+            <h6>Billing</h6>
+          </div>
+          <h2>Capture recurring revenue</h2>
+          <p>
+            Support recurring business models, minimize churn, and automate
+            finance operations.
+          </p>
+          <button class="primaryButton">Start with Billing ></button>
+
+          <div class="seeMore">
+            <b>See also</b>
+            <span><strong>Invoicing</strong>   for invoice creation, collection, and tracking</span>
+            <span><strong>Revenue </strong>  Recognition for streamlined accrual accounting</span>
+            <span><strong>Sigma</strong>   for custom revenue reports</span>
+          </div>
+        </div>
+        <img src="./assets/adds/billing.svg" alt="billing" />
+      </article>
+      <article id="connect">
+        <div class="text">
+          <div class="label" >
+            <img src="./assets/adds/iconConnect.svg" alt="icon" />
+            <h6>Connect</h6>
+            </div>
+            <h2>Set up multiparty payments and payouts</h2>
+            <p>Integrate payments into your platform or marketplace for end-to-end payments experiences.</p>
+            <button class="primaryButton">Start with Connect ></button>
+
+            <div class="seeMore">
+              <b>See also</b>
+              <span><strong>Terminal</strong> for custom in-person payments</span>
+              <span><strong>Instant Payouts</strong>  for fast payments to users</span>
+              <span><strong>Payment Elements</strong>  for customizable UIs</span>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/adds/connect.svg" alt="connect" />
+      </article>
+      <article id="issuing"><div class="text">
+          <div class="label" >
+            <img src="./assets/adds/iconIssuing.png" alt="icon" />
+            <h6>Issuing</h6>
+            </div>
+            <h2>Build a fintech offering with banking-as-a-service</h2>
+            <p>Launch, manage, and scale a commercial card program without any setup fees.</p>
+            <button class="primaryButton">Start with Issuing ></button>
+
+            <div class="seeMore">
+              <b>See also</b>
+              <span><strong>Treasury</strong>  for financial accounts</span>
+              <span><strong>Capital</strong>   for offering fast, flexible financing</span>
+              <span><strong>Connect </strong>  for powering platform payments</span>
+            </div>
+          </div>
+          <img src="./assets/adds/justCards.svg" alt="justCards"></article>
+    </section>
+    <section id="separator">
+      <img class="separator" src="./assets/adds/separatorImage.svg" alt="">  
     </section>
   </body>
 </html>
