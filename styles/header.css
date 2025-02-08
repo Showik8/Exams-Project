@@ -14,17 +14,18 @@ body {
   height: 100svh;
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
 }
 
 #header {
   width: 100%;
-  height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-image: url("../assets/header/headerBackground.png");
   background-repeat: no-repeat;
+  background-color:white;
 }
 
 header {
@@ -81,6 +82,7 @@ header {
   justify-content: space-between;
   width: 100%;
   padding: 5%;
+  padding-right: 0px;
 }
 
 .headerText {
@@ -102,16 +104,18 @@ header {
 }
 
 .Photos {
+  max-width: 50%;
   display: inline-flex;
-  position: relative;
-  right: 250px;
+  flex-direction: column;
+  background-image: url("../assets/header/Charts.png");
+ 
+  img{
+    position: relative;
+    top: 60px;
+    right: 100px;
+  }
 }
 
-.Photos img:first-child {
-  position: relative;
-  left: 400px;
-  top: 74px;
-}
 
 .companies {
   display: grid;
@@ -150,6 +154,8 @@ header {
 @media screen and (max-width: 1440px) {
   .headerContent {
     padding: 0px 2%;
+    padding-right: 0;
+    
   }
 }
 
@@ -158,12 +164,16 @@ header {
     justify-content: space-between;
     width: 90%;
   }
-  .headerContent {
-    padding: 0px 2%;
+  .headerText {
+    width: 50%;
+    height: 60%;
+    h1 {
+      font-size: 70px;
+    }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   nav,
   .headButtons {
     display: none;
@@ -171,12 +181,18 @@ header {
   #header {
     width: 100vw;
     height: 100%;
-    margin-bottom: 400px;
   }
 
   #header * {
     margin: unset;
     position: unset;
+  }
+   .headerText {
+    width: 50%;
+    height: 40%;
+    h1 {
+      font-size: 45px;
+    }
   }
 
   .BurgerMenu {
@@ -187,18 +203,12 @@ header {
     justify-content: center;
     padding: 0px 10px;
   }
-  .headerText {
-    width: 50%;
-    height: 40%;
-    h1 {
-      font-size: 50px;
-    }
-  }
+ 
 
   .Photos {
     display: inline-block;
     width: 50%;
-    justify-content: center;
+    background-image: none;
   }
 
   .Photos img:nth-child(2) {
