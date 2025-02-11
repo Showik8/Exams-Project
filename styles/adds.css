@@ -8,8 +8,6 @@
   flex-direction: column;
 }
 
-
-
 article {
   display: inline-flex;
   justify-content: space-between;
@@ -225,20 +223,18 @@ article {
   flex-direction: column;
   justify-content: space-around;
 
-
-  h3{
+  h3 {
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
   }
 
-   p{
+  p {
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
   }
 
-  
   .photos {
     display: inline-flex;
     flex-direction: column;
@@ -247,7 +243,7 @@ article {
     div:first-child {
       margin-top: 20px;
     }
-    
+
     img {
       width: 20px;
       height: 20x;
@@ -273,15 +269,14 @@ article {
     top / 100% 2px no-repeat;
 }
 
-#built{
-    padding: 5% 20%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+#built {
+  padding: 5% 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.built{
+.built {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -292,42 +287,40 @@ article {
     line-height: 28px;
     color: rgba(99, 91, 255, 1);
   }
-   h2 {
+  h2 {
     font-size: 35px;
     font-weight: 500;
     line-height: 48px;
     color: rgba(10, 37, 64, 1);
   }
 
-  p{
+  p {
     color: rgba(173, 189, 204, 1);
     font-weight: 500;
     font-size: 17px;
     line-height: 28px;
   }
-
-
 }
 
-.cards{
+.cards {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 50px;
 
-.card:first-of-type{
-  margin-top: 20%;
+  .card:first-of-type {
+    margin-top: 20%;
+  }
+
+  .card:last-of-type {
+    margin-bottom: 20%;
+  }
 }
 
-.card:last-of-type {
-  margin-bottom:  20%;
-}
-}
-
-.card{
+.card {
   display: flex;
   flex-direction: column;
-  border: 5px solid  white;
+  border: 5px solid white;
   background-color: white;
   border-radius: 10px;
   padding: 1px;
@@ -335,8 +328,7 @@ article {
   height: 550px;
   position: relative;
 
-
-  .texted{
+  .texted {
     background-color: white;
     display: inline-flex;
     flex-direction: column;
@@ -344,34 +336,31 @@ article {
     gap: 10px;
   }
 
-  .iconed{
+  .iconed {
     display: inline-flex;
     padding: 10px 10px;
     gap: 10px;
     background-color: whitesmoke;
     padding: 4%;
 
-    h4{
+    h4 {
       color: rgba(10, 37, 64, 1);
       font-weight: 500;
       font-size: 32px;
       line-height: 36px;
     }
 
-    span{
-      color:rgba(66, 84, 102, 1) ;
-       font-weight: 500;
+    span {
+      color: rgba(66, 84, 102, 1);
+      font-weight: 500;
       font-size: 17px;
       line-height: 28px;
     }
   }
-
-
 }
 
-
-#designes{
-  background-color:rgb(8, 43, 77) ;
+#designes {
+  background-color: rgb(8, 43, 77);
   clip-path: polygon(0 15%, 100% 1%, 100% 50%, 100% 100%, 0 100%);
   display: flex;
   justify-content: center;
@@ -380,33 +369,32 @@ article {
   padding-bottom: 10%;
   flex-direction: column;
 
-   h6 {
+  h6 {
     font-weight: 500;
     font-size: 17px;
     line-height: 28px;
     color: rgba(99, 91, 255, 1);
   }
-   h2 {
+  h2 {
     font-size: 35px;
     font-weight: 500;
     line-height: 48px;
-    color:white;
+    color: white;
   }
 
-  p{
+  p {
     font-weight: 500;
     font-size: 17px;
     line-height: 28px;
     color: rgba(173, 189, 204, 1);
-
   }
 
-      button{
+  button {
     background-color: rgba(0, 212, 255, 1);
   }
 }
 
-.cardsOfDesignes{
+.cardsOfDesignes {
   display: flex;
   justify-self: center;
   padding: 0px 20%;
@@ -414,32 +402,108 @@ article {
   height: 300px;
 }
 
-.designedCard{
-
-  div{
+.designedCard {
+  div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
   }
 
-  h5{
+  h5 {
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
     color: rgba(255, 255, 255, 1);
   }
 
-  p{
+  p {
     color: rgba(173, 189, 204, 1);
   }
 
-  span{
+  span {
     color: rgba(0, 212, 255, 1);
-
   }
 }
 
+#low {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+.low {
+  display: flex;
+  flex-direction: column;
+  h6 {
+    color: rgba(99, 91, 255, 1);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  h2 {
+    color: rgba(10, 37, 64, 1);
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  p {
+    color: rgba(66, 84, 102, 1);
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+}
+
+.lowCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  align-content: center;
+  width: 100%;
+  padding: 0px 20%;
+
+
+}
+
+.cardOfLow {
+  width: 400px;
+  height: 500px;
+  box-shadow: 0px 30px 45px -30px rgba(50, 50, 93, 0.3);
+  box-shadow: 0px 18px 36px -18px rgba(0, 0, 0, 0.3);
+  padding: 0px  20px;
+
+  img {
+  width: 100%;
+  display: block;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+  h4 {
+    font-weight: 500;
+    font-size: 24.17px;
+    line-height: 36px;
+    letter-spacing: 0%;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 16.17px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: rgba(66, 84, 102, 1);
+  }
+}
 
 @media screen and (max-width: 900px) {
   .hidden {
