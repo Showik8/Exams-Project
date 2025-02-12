@@ -39,9 +39,21 @@ Project Structure
 Exam-Project/
 │── index.html
 │── styles/
-│   ├── styles.css
+│   ├── add.css
+│   ├──  header.css
 └── assets/
     ├── header/
+    ├── adds/
+    ├── built/
+    ├── developers/
+    ├── enterprice/
+    ├── footer/
+    ├── low/
 
 
+Authors:
+Shota Abashidze @Showik
+Tedo Turmanidze @tednex
+
+    
 
